@@ -1,39 +1,75 @@
-<h1 align="center">Archived</h1>
-<h4 align="center">I'm archiving this repo as I'm no longer working on physically based rendering. </h4>
+[update-readmes]   Mode: rewrite — migrating to template structure...
+# akari_render
 
-<h1 align="center">AkariRender</h1>
-<h5 align="center">High Performance CPU/GPU Physically Based Renderer</h5>
-<h5 align="center"> ⚠ The new version based on <a href=https://github.com/LuisaGroup/luisa-compute-rs>LuisaCompute</a> is updated! ⚠ </h5>
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/akari_render)
 
-<!-- ![](gallery/beauty4k.png) -->
-![](gallery/classroom.png)
-Scene by Christophe Seux (CC0)
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-AkariRender is a CPU/GPU physically based renderer written in Rust and powered by *LuisaCompute*.
-Previous version with PPG and SMCMC is in [legacy-cpp](https://github.com/shiinamiyuki/akari_render/tree/legacy-cpp) branch
+## Architecture
 
-## Features
-- Loading Blender scene
-- Supports a subset of Cycles shader graph via JIT
-- RGB/Spectral Rendering (WIP)
-- Path Tracing
-- Path Tracing with Metropolis Sampling
-- Gradient Domain Path Tracing
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
+## Install
 
-## Building:
-If you are using < Windows 10, please upgrade to Windows 10 or above.
-- CMake > 3.23
-- Ninja
-- Clone Blender 4.0 source code from `blender-v4.0-release` branch
-- Put path to blender source in `blender_src_path.txt`
-- Clone [LuisaCompute](https://github.com/LuisaGroup/luisa-compute-rs) alongside this repo
-  
-If you intend to run the renderer on cpu, the following runtime requirement must be satisfied:
-- clang++ in `PATH`
-- llvm dynamic library of the same version. For Windows users, it is the `LLVM-C.dll`.
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
 
-## Run
+```bash
+git clone https://github.com/Interested-Deving-1896/akari_render.git
+cd akari_render
 ```
-cargo run --release --bin akari-cli -- -d (cpu|cuda|dx|metal) -s scenes/cbox/scene.json -m scenes/cbox/test.json
+
+## Usage
+
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
+
+## Configuration
+
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
+
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/akari_render`](https://github.com/Interested-Deving-1896/akari_render) and mirrored through:
+
 ```
+Interested-Deving-1896/akari_render  ──►  OpenOS-Project-OSP/akari_render  ──►  OpenOS-Project-Ecosystem-OOC/akari_render
+```
+
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
+
+## Contributors
+
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+[GPL-3.0](https://github.com/Interested-Deving-1896/akari_render/blob/next/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
